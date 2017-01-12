@@ -1,0 +1,49 @@
+body {
+    width: 1900px;
+    height: 1080px;
+
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    
+    background-color: #ccffcc;
+}
+
+table {
+    font-size: 20px;
+    
+    border: 1px solid black;    
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    
+    text-align: center;
+    
+    border: 1px solid black;
+}
+
+#av-player {
+    position: absolute;;
+
+    left: 1000px;
+    top: 400px;
+
+    width: 480px;
+    height: 270px;
+}
+
+#subtitle {
+    position: absolute;;
+
+    left: 1000px;
+    top: 680px;
+
+    width: 480px;
+    height: 50px;
+
+    font-size:30px;
+}

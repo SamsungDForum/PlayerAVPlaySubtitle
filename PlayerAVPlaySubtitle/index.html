@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' type='text/css' href='./style.css'/>
+    <script type='text/javascript' src='$WEBAPIS/webapis/webapis.js'></script>
+    <script type='text/javascript' src='./main.js'></script>
+</head>
+<body onload='main();' onkeydown='handleKeydown(event);'> 
+	<h1>Player AVPlay Subtitle Sample</h1>
+	<h2>Please click buttons.</h2>
+	<br>
+	
+	<table>
+		<tr>
+			<td>Function</td>
+			<td>Button</td>
+		</tr>
+		<tr>
+			<td>Play contents</td>
+			<td><input type='button' onclick='test0();' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Show subtitle</td>
+			<td><input type='button' onclick='test1();' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Hide subtitle</td>
+			<td><input type='button' onclick='test2();' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Get Total Subtitle Track</td>
+			<td><input type='button' onclick='test3();' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Get Current Subtitle Track</td>
+			<td><input type='button' onclick='test4();' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Change Language</td>
+			<td><input type='button' onclick='test5();' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Subtitle sync +1s</td>
+			<td><input type='button' onclick='test6(1000);' value='Click'></td>
+		</tr>
+		<tr>
+			<td>Subtitle sync -1s</td>
+			<td><input type='button' onclick='test6(-1000);' value='Click'></td>
+		</tr>
+	</table>
+
+	<object id='av-player' type='application/avplayer'></object>
+	<div id='subtitle'></div>
+
+	<br>
+	<h2>Result <input type='button' onclick='logClear();' value='Log Clear'></h2>
+	<h3 id='result'></h3>
+</body>
+</html>
